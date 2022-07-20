@@ -31,11 +31,13 @@
                             <span class="display-block">{{$borrower->unique_number}}</span>
                             @if($borrower->gender=="Male")
                                 <span class="display-block">{{trans_choice('general.male',1)}}
-                                    , {{date("Y-m-d")-$borrower->dob}} {{trans_choice('general.year',2)}}</span>
+                                    {{-- , {{date("Y-m-d")-$borrower->dob}} {{trans_choice('general.year',2)}} --}}
+                                </span>
                             @endif
                             @if($borrower->gender=="Female")
                                 <span class="display-block">{{trans_choice('general.female',1)}}
-                                    , {{date("Y-m-d")-$borrower->dob}} {{trans_choice('general.year',2)}}</span>
+                                    {{-- , {{date("Y-m-d")-$borrower->dob}} {{trans_choice('general.year',2)}} --}}
+                                </span>
                             @endif
                         </div>
 
